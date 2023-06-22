@@ -1,11 +1,11 @@
 .skill {
     display: flex;
+    height: 245vh;
 }
 .skillLeft {
     width: 50vw;
     height: 81.7vh;
-    border-right: 1px solid #000;
-    border-bottom: 1px solid #000;
+    // border-bottom: 1px solid #000;
     position: relative;
 }
 .skillLeft h1 {
@@ -37,6 +37,7 @@
 }
 .sklls {
     width: 100%;
+    border-left: 1px solid #000;
     height: 50%;
     border-bottom: 1px solid #000;
     display: flex;

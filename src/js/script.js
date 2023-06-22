@@ -1,21 +1,45 @@
-const skillLeft = document.querySelector('.skillLeft');
-const skillRight = document.querySelector('.skillRight');
-
-// .skillLeft 요소 고정
-gsap.to(skillLeft, {
-  position: 'fixed',
-  top: 0,
-  left: 0,
-  width: '50vw',
-  height: '81.7vh',
+gsap.to('.skillLeft', {
+    scrollTrigger: {
+        trigger: '.skillLeft',
+        start: '-20.2% top',
+        end: '=+200%',
+        pin: true,
+        scrub: true,
+        markers: false,
+    },
 });
 
-// .skillRight 요소 스크롤 애니메이션
-gsap.to(skillRight, {
-  y: '-100%', // 원하는 움직임 방향과 정도로 설정 (예: 위로 이동시킬 경우 '-100%')
-  ease: 'none', // 원하는 이징 옵션 선택 (예: 'none', 'power2.inOut', 'bounce', 등)
-  scrollTrigger: {
-    trigger: '.skill', // 스크롤 트리거로 사용할 요소 선택
-    scrub: true, // 스크롤 속도에 따라 움직임 적용 (선택 사항)
-  },
+gsap.to('.movingText', {
+    scrollTrigger: {
+        trigger: '.movingText',
+        start: 'top top',
+        end: '+=100%',
+        pin: true,
+        pinSpacing: false,
+        scrub: true,
+        markers: false,
+    },
+});
+
+gsap.to('.skillRight', {
+    scrollTrigger: {
+        trigger: '.skillRight',
+        start: 'top top',
+        end: '+=245%',
+        pin: false,
+        scrub: true,
+        markers: false,
+    },
+});
+
+gsap.to('.movingText2', {
+    scrollTrigger: {
+        trigger: '.movingText2',
+        start: 'top top',
+        end: '+=300%',
+        pin: true,
+        pinSpacing: false,
+        scrub: true,
+        markers: false,
+    },
 });

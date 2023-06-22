@@ -1,0 +1,72 @@
+.card1 {
+    height: 326.5vh;
+    .card1__inner {
+        display: flex;
+        .card1Left {
+            width: 49vw;
+            height: 79.7vh;
+        }
+        .card1Right {
+            width: 49vw;
+            height: 79.7vh;
+            border-left: 1px solid #000;
+            .card1Logo {
+                padding: 2vw;
+            }
+            h3 {
+                padding: 28vh 0 6vh 2vw;
+                a {
+                    font-size: 1vw;
+                    padding: 0.3vw 4vh;
+                    border: 0.1vw solid #000;
+                }
+            }
+            h1 {
+                font-weight: 200;
+                padding-left: 2vw;
+                font-size: 3vw;
+            }
+            p {
+                padding-top: 2vh;
+                padding-left: 2vw;
+                font-family: "ChosunNm";
+                font-size: 0.8vw;
+            }
+    
+        }
+    }
+}
+.colorline {
+    border: 1px solid #000;
+    height: 2vh;
+    width: 100vw;
+    background-color: #E9FF46;
+}
+.c1 {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-image: url(../../src/images/cardWebstandard.png);
+    background-size: cover;
+}
+.c2 {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-image: url(../../src/images/cardWebstandard2.png);
+    background-size: cover;
+}
+.c3 {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-image: url(../../src/images/cardphp.png);
+    background-size: cover;
+}
+.c4 {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-image: url(../../src/images/cardphp2.png);
+    background-size: cover;
+}

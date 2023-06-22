@@ -4,6 +4,7 @@
     font-family: 'Poppins';
     font-weight: 200;
 }
+//arrow
 .scrollarrow {
     position: absolute;
     right: 2vw;
@@ -16,12 +17,28 @@
     bottom: 30vh;
     writing-mode : vertical-lr;
 }
+.scrollarrow2 {
+    position: absolute;
+    right: 2vw;
+    top: 20vh;
+}
+.scrollDownText2 {
+    font-size: 0.8vw;
+    position: absolute;
+    right: 2.6vw;
+    top: 22vh;
+    writing-mode : vertical-lr;
+}
+
+//movingText
 .movingText {
     width: 100vw;
     padding: 1vh 0;
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
     overflow: hidden;
+    z-index: 10;
+    background-color: #fff;
 }
 
 .movingText p {
@@ -30,6 +47,26 @@
     animation: marqueeText 100s linear infinite;
 }
 .movingText p em {
+    color: #d0e33e;
+    font-weight: 400;
+}
+
+.movingText2 {
+    width: 100vw;
+    padding: 1vh 0;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    overflow: hidden;
+    z-index: 10;
+    background-color: #fff;
+}
+
+.movingText2 p {
+    font-size: 5vw;
+    white-space: nowrap;
+    animation: marqueeText 100s linear infinite;
+}
+.movingText2 p em {
     color: #d0e33e;
     font-weight: 400;
 }
